@@ -131,7 +131,7 @@ status_t LIS3DHCore::beginCore(void)
 	volatile uint8_t temp = 0;
 	for( uint16_t i = 0; i < 10000; i++ )
 	{
-		temp++;
+		temp+=1;
 	}
 
 	//Check the ID register to determine if the operation was a success.
